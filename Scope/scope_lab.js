@@ -27,6 +27,20 @@ const functionConst = "I'm a block-scoped const";
 }
 show();
     
-console.log(functionVar); // Throws ReferenceError
-console.log(functionLet); // Throws ReferenceError
-console.log(functionConst); // Throws ReferenceError
+//console.log(functionVar); // Throws ReferenceError
+//console.log(functionLet); // Throws ReferenceError
+//console.log(functionConst); // Throws ReferenceError
+
+{
+let a = 2;
+var b = 4;
+const c = 5;
+
+// a = 3;
+// b = 5;
+// c = 6;//Throws TypeError, assignment to a constant variable
+}
+
+a = 13;
+b = 15;
+c = 16;
